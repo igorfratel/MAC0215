@@ -23,10 +23,12 @@ diff seq_set_79_ids_sorted.txt curated_set_ids_sorted.dat
 Analisando o output do commando `diff` podemos ver que a hipótese do subconjunto é verdadeira.
 
 
-
+### Tasklist
 - [X] Perguntar ao autor sobre os valores de "k" inconsistentes dados no artigo
 - [X] Baixar os arquivos necessarios (sequencias fasta e anotações)
-- [ ] Modificar o ROC100.py (otimizar e incluir funcionalidades)
+- [ ] Calcular o número de pares FF e FO e bater com os valores do artigo
+- [ ] Fazer com que o ROC100.py gere um arquivo com as suas classificações de verdadeiros e falsos positivos
+- [ ] Modificar o ROC100.py para rodar o NC uma única vez com o threshold mínimo
 - [ ] Rodar o Blast nas 26.197 sequências
 - [ ] Rodar o NC 
 - [ ] Rodar o porthoDom
