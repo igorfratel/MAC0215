@@ -10,18 +10,40 @@ def true_false_positives(input_file, family_dict):
     #Receives a dictionary "protein:family" and an input_file name.
     #The format of the input_file must be "protein1 protein2 nc_score".
     #For every protein pair in input_file, determines if the proteins in the pair belong to different families or the same family.
-    #Return tp_count and fp_count, which are the number of pairs of family-family proteins
-    #and the number of pairs of familyX-familyY proteins, respectively
+    #Pairs where both proteins don't belong to the curated benchmark are ignored.
+    #Write to true_false_positives.txt the pairs with their NC-score and posterior classification in tp or fp.
     tp_count = 0
     fp_count = 0
+    output_file = open("true_false_positives.txt", w)
     with open(input_file) as f:
         for line in f:
             line = line.split()
-            if (family_dict[line[0]] == family_dict[line[1]]):
-                tp_count+=1
-            else:
-                fp_count+=1
-    return tp_count, fp_count
+            if (line[0] in family_dict):
+                if (line[1] in family_dict):
+                    if (family_dict[line[0]] == family_dict[line[1]]):
+                        tp_count+=1
+                        output_file.write(line[0] + " " + line[1] + " " + line[2] + " " + "TP")
+                    else:
+                        fp_count+=1
+                        output_file.write(line[0] + " " + line[1] + " " + line[2] + " " + "FP")
+                else:
+                    fp_count+=1
+                    output_file.write(line[0] + " " + line[1] + " " + line[2] + " " + "FP")
+            else if (line[1] in family_dict):
+                if (line[0] in family_dict):
+                    if (family_dict[line[0]] == family_dict[line[1]]):
+                        tp_count+=1
+                        output_file.write(line[0] + " " + line[1] + " " + line[2] + " " + "TP")
+                    else:
+                        fp_count+=1
+                        output_file.write(line[0] + " " + line[1] + " " + line[2] + " " + "FP")
+                else:
+                    fp_count+=1
+                    output_file.write(line[0] + " " + line[1] + " " + line[2] + " " + "FP")
+    output_file.close()
+
+def true_false_positives_counter(input_file):
+    #Sorts input_file(outputed from the true_false_positives function) according to NC-score and counts number of tp and fp pair for each threshold.
 
 
 #-------------------------------------------(BEGIN) Functions used only for plotting ROC curve------------------------------------
@@ -61,7 +83,7 @@ def main():
     FO_count = float(sys.argv[3])
     FF_count = float(sys.argv[4])
     min_threshold = float(sys.argv[5])
-    max_threshold = float(sys.argv[6])
+    max_threshold = 1.0
     iterations = float(sys.argv[7])
 
     print("Creating dictionary with proteins and their families: \n")
@@ -77,6 +99,19 @@ def main():
     y_axis = []
     print("Running NC_standalone with multiple thresholds: \n")
     FF_observed = 0
+    output_file = output_file_generic + str(threshold) + ".txt"
+    nc(input_file, output_file, min_threshold)
+    true_false_positives(output_file, family_dict)
+    positives_file = open("true_false_positives.txt", r)
+    true_false_positives_counter(positives_file)
+    #DAQUI PRA BAIXO É CÓDIGO ANTIGO
+
+
+
+
+
+
+
     threshold = min_threshold
     while(threshold < max_threshold):
         output_file = output_file_generic + str(threshold) + ".txt"
