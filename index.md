@@ -1,6 +1,6 @@
-'''
+---
 name: Igor Fratel Santana - MAC0215
-'''
+---
 # 03/08/2017
 Mandei um email para um dos autores(jacob@jjoseph.org) do [artigo](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000063)
 do Neighborhood Correlation questionando sobre valores conflitantes de **k** para o cálculo do *ROC100k score*
