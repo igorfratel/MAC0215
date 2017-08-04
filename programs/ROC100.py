@@ -42,8 +42,18 @@ def true_false_positives(input_file, family_dict):
                     output_file.write(line[0] + " " + line[1] + " " + line[2] + " " + "FP")
     output_file.close()
 
-def true_false_positives_counter(input_file):
-    #Sorts input_file(outputed from the true_false_positives function) according to NC-score and counts number of tp and fp pair for each threshold.
+def sort_by_threshold(input_file):
+    #sorts input file by threshold (Nc score) in ascending order and writes it to "true_false_positives_sorted.txt"
+
+    os.system("sort -n -k 3,3 " + input_file + " > true_false_positives_sorted.txt")
+    #data = open(input_file).readlines()
+    #data.sort(key=lambda l: float(l.split()[2]))
+    #return data
+
+
+def true_false_positives_counter(data):
+    #Sorts list of lines (outputed from the true_false_positives function) according to NC-score and counts number of tp and fp pair for each threshold.
+
 
 
 #-------------------------------------------(BEGIN) Functions used only for plotting ROC curve------------------------------------
@@ -97,14 +107,21 @@ def main():
     step = (max_threshold - min_threshold)/iterations
     x_axis = []
     y_axis = []
-    print("Running NC_standalone with multiple thresholds: \n")
     FF_observed = 0
-    output_file = output_file_generic + str(threshold) + ".txt"
+    output_file = output_file_generic + str(min_threshold) + ".txt"
+
+    print("Running NC_standalone with multiple thresholds: \n")
     nc(input_file, output_file, min_threshold)
-    true_false_positives(output_file, family_dict)
-    positives_file = open("true_false_positives.txt", r)
-    true_false_positives_counter(positives_file)
-    #DAQUI PRA BAIXO É CÓDIGO ANTIGO
+
+    print("Assigning true or false positive labels to protein pairs: \n")
+    true_false_positives(output_file, family_dict) #Creates a file called true_false_positives.txt with "protein1 protein2 nc_score tp/fp" lines
+    print("Sorting the assigned pairs by threshold: \n")
+    sort_by_threshold("true_false_positives.txt") #sorts the file by threshold and writes to "true_false_positives_sorted.txt"
+
+    print("Counting number of true and false positives for each threshold: \n")
+    true_false_positives_counter(positives_list) #
+    
+    
 
 
 
