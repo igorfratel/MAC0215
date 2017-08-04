@@ -1,5 +1,5 @@
-
-# 03/08/2017
+# Diário de bordo
+## 03/08/2017
 Mandei um email para um dos autores(jacob@jjoseph.org) do [artigo](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000063)
 do Neighborhood Correlation questionando sobre valores conflitantes de **k** para o cálculo do *ROC100k score*
 
@@ -24,7 +24,7 @@ Analisando o output do commando `diff` podemos ver que a hipótese do subconjunt
 
 
 ### Tasklist
-- [X] Perguntar ao autor sobre os valores de "k" inconsistentes dados no artigo
+* [X] Perguntar ao autor sobre os valores de "k" inconsistentes dados no artigo
 - [X] Baixar os arquivos necessarios (sequencias fasta e anotações)
 - [ ] Calcular o número de pares FF e FO e bater com os valores do artigo
 - [ ] Fazer com que o ROC100.py gere um arquivo com as suas classificações de verdadeiros e falsos positivos
