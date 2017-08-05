@@ -1,6 +1,6 @@
 # Diário de bordo
 
-## 05/08/2017
+# 05/08/2017
 
 Modifiquei o ROC100.py para gerar arquivos com as suas classificações dos pares de proteínas em verdadeiros e falsos positivos.  
 Comecei a tarefa de "Modificar o ROC100.py para rodar o NC uma única vez com o threshold mínimo".  
@@ -15,18 +15,25 @@ cat seq_set_79.fasta | blastp -num_threads 8 -query - \
 ```
 Onde o **evalue** é 10 vezes o número de sequências e **searchsp** é o número de resíduos ao quadrado, segundo o README do
 NC_standalone.  
-Segundo o artigo, o número de resíduos é 14.073.417.  
+Segundo o artigo, o número de resíduos é 14.073.417. 
+
+Formatei o **combined_blast_results.tsv** de forma a funcionar como input para o NC_standalone. O novo arquivo se chama
+**combined_blast_results_ready.txt**  
+Rodei o NC_standalone utilizando o seguinte comando:  
+``` bash
+NC_standalone -f combined_blast_results_ready.txt -o nc_results.txt --nc_thresh -1000
+```
+  
 Nesse fim de semana, pretendo me dedicar a escrever a proposta de trabalho para MAC0215 e, se possível, continuar as
 modificações no ROC100.py.  
 
 - [ ] Calcular o número de pares FF e FO e bater com os valores do artigo
 - [ ] Modificar o ROC100.py para rodar o NC uma única vez com o threshold mínimo
-- [ ] Rodar o NC
+- [X] Rodar o NC
 - [X] Perguntar ao autor sobre os valores de “k” inconsistentes dados no artigo
 - [X] Baixar os arquivos necessarios (sequencias fasta e anotações)
 - [X] Fazer com que o ROC100.py gere um arquivo com as suas classificações de verdadeiros e falsos positivos
 - [X] Rodar o Blast nas 26.197 sequências
-
 
 [comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
 
