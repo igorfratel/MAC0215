@@ -1,6 +1,5 @@
 # Diário de bordo
 
-# 12/08/2017 e 13/08/2017
 
 Calculei o número de pares FF e FO com o seguinte script e de acordo com a fórmula que o autor do artigo me mandou por email:
 ``` python
