@@ -1,5 +1,53 @@
 # Diário de bordo
+# 12/08/2017 e 13/08/2017
 
+Calculei o número de pares FF e FO com o seguinte script e de acordo com a fórmula que o autor do artigo me mandou por email:
+``` python
+families = [10, 44, 81, 31, 32, 77, 38, 7, 12, 8, 14, 12, 44, 906, 56, 22, 46, 44, 38, 55]
+FF = 0
+FO = 0
+for i in families:
+	FF += i*i
+	FO += i*(26197 - i)
+print("FF = " + str(FF) + "  " + "FO = " + str(FO) + "\n")
+```
+Os número de pares FF e FO foi igual ao mostrado no artigo.  
+
+Separei o programa ROC100.py para facilitar a depuração, pois não estava obtendo os valores esperados.    
+Segue a sequência de passos realizada:  
+Tenho o **nc_results.txt** obtido anteriormente, contendo os NC-scores para os pares de proteínas. Também tenho o arquivo **curated_set.dat**, obtido no site do Neighborhood Correlation, que consiste na classificação em famílias das 1577 proteínas do benchmark.  
+Rodei o script **classifier.py**, que gera um arquivo **nc_results_classified.txt** contendo a classificação dos pares de proteínas em falsos positivos (FP) ou verdadeiros positivos(TP). Se duas proteínas possuem a mesma família de acordo com o curated_set.dat, elas são TP. Caso elas tenham famílias diferentes ou não estejam presentes no curated_set.dat, são consideradas FP.  
+Em seguida, ordenei o arquivo nc_results_classified.txt em ordem decrescente de NC-score usando o seguinte comando:  
+``` bash
+sort -g -r -k 3,3 nc_results_classified.txt > nc_results_classified_sorted.txt
+```
+A partir de agora, o único arquivo usado será o nc_results_classified_sorted.txt. Assumo que até aqui tudo está certo.  
+Agora vou contar, a partir da primeira linha, os "FP" que aparecerem. Quando minha contagem chegar em 100*k com k = 1577, eu terei encontrado o threshold mínimo.  
+
+> The performance of each method was assessed via the ROC-nscore (Table 3), which represents both false positives and false negatives (see Methods). ROC-n is the area under the Receiver Operating Characteristic (ROC) curve comprised of the top ranking pairs up to the first n false positives. We used n= 100k, where k is family size, corresponding to 100 false positives per query.  
+
+O threshold encontrado pelo meu programa **fp_counter.py** foi **0.0935232293278493**, na linha "Q8IV61 Q9ES74 0.0935232293278493 FP".  
+Copiei as linhas com o threshold >= 0.0935232293278493 para o arquivo **nc_results_classified_sorted_cut.txt**.  
+Recapitulando, o arquivo nc_results_classified_sorted_cut.txt contém os pares de proteínas com maior NC-score até os primeiros 157.700 falsos positivos. Os pares estão classificados em FP e TP.  
+
+Agora eu suponho ter todos os dados necessários para gerar a curva ROC100k e o ROC100k score.  
+
+Criei o programa **roc_curve.py**, que gerou a seguinte curva ROC com o conjunto de All de famílias:
+<img src="https://github.com/igorfratel/MAC0215/tree/master/images/roc_all_generated.png" alt="hi" class="inline"/>
+
+
+
+
+
+- [X] Calcular o número de pares FF e FO e bater com os valores do artigo
+- [X] Modificar o ROC100.py para rodar o NC uma única vez com o threshold mínimo
+- [X] Rodar o NC
+- [X] Perguntar ao autor sobre os valores de “k” inconsistentes dados no artigo
+- [X] Baixar os arquivos necessarios (sequencias fasta e anotações)
+- [X] Fazer com que o ROC100.py gere um arquivo com as suas classificações de verdadeiros e falsos positivos
+- [X] Rodar o Blast nas 26.197 sequências
+
+[comment]: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 05/08/2017
 
 Modifiquei o ROC100.py para gerar arquivos com as suas classificações dos pares de proteínas em verdadeiros e falsos positivos.  
