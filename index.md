@@ -34,7 +34,7 @@ Recapitulando, o arquivo nc_results_classified_sorted_cut.txt contém os pares d
 Agora eu suponho ter todos os dados necessários para gerar a curva ROC100k e o ROC100k score.  
 
 Criei o programa **roc_curve.py**, que gerou a seguinte curva ROC com o conjunto de All de famílias:
-![Alt text](images/roc_all_generated.png?raw=true "Curva ROC 1")
+[comment]: ![Alt text](images/roc_all_generated.png?raw=true "Curva ROC 1")
 Esse gráfico está condizente com o que é apresentado no artigo. 
 
 Calculando a area sob a curva desse gráfico obtive 0.00326420045135 com a função trapz do pacote numpy. Esse valor é condizente com o gráfico, porém é muito diferente do valor obtido pelo autor de 0.8148. Mandei um email para o autor perguntando a respeito disso.
@@ -42,7 +42,8 @@ Calculando a area sob a curva desse gráfico obtive 0.00326420045135 com a funç
 Em suma, consegui reproduzir os gráficos mas não o score gerado por eles.
 Segue outro gráfico gerado, dessa vez usando o conjunto All-kin (todas as proteínas exceto kinases).
 O gráfico está extremamente semelhante ao apresentado no artigo.
-![Alt text](images/roc_allkin_generated.png?raw=true "Curva ROC 2")
+
+[comment]: ![Alt text](images/roc_allkin_generated.png?raw=true "Curva ROC 2")
 
 Embora não tenha conseguido gerar os scores, esses gráficos indicam alta sensibilidade e especificidade na detecção de
 pares homólogos, segundo minha análise.
