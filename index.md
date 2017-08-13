@@ -5,7 +5,7 @@
 
 Modifiquei o ROC100.py para gerar arquivos com as suas classificações dos pares de proteínas em verdadeiros e falsos positivos.  
 Comecei a tarefa de "Modificar o ROC100.py para rodar o NC uma única vez com o threshold mínimo".  
-Rodei o blastp nas 26.197 sequências, gerando o arquivo **combined_blast_results.tsv**. Para isso, utilizei o seguinte comando:  
+Rodei o blastp nas 26.197 sequências, gerando o arquivo **combined_blast_results.tsv**. Para isso, utilizei o seguinte comando:   
 ``` bash
 makeblastdb -in seq_set_79.fasta  -dbtype prot && \
 cat seq_set_79.fasta | blastp -num_threads 8 -query - \
