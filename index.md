@@ -2,15 +2,7 @@
 
 
 Calculei o número de pares FF e FO com o seguinte script e de acordo com a fórmula que o autor do artigo me mandou por email:
-``` python
-families = [10, 44, 81, 31, 32, 77, 38, 7, 12, 8, 14, 12, 44, 906, 56, 22, 46, 44, 38, 55]
-FF = 0
-FO = 0
-for i in families:
-	FF += i*i
-	FO += i*(26197 - i)
-print("FF = " + str(FF) + "  " + "FO = " + str(FO) + "\n")
-```
+
 Os número de pares FF e FO foi igual ao mostrado no artigo.  
 
 Separei o programa ROC100.py para facilitar a depuração, pois não estava obtendo os valores esperados.    
