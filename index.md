@@ -1,5 +1,22 @@
 # Diário de bordo
 
+# 12/08/2017 e 13/08/2017
+
+Calculei o número de pares FF e FO com o seguinte script e de acordo com a fórmula que o autor do artigo me mandou por email:
+``` python
+families = [10, 44, 81, 31, 32, 77, 38, 7, 12, 8, 14, 12, 44, 906, 56, 22, 46, 44, 38, 55]
+FF = 0
+FO = 0
+for i in families:
+	FF += i*i
+	FO += i*(26197 - i)
+print("FF = " + str(FF) + "  " + "FO = " + str(FO) + "\n")
+```
+Os número de pares FF e FO foi igual ao mostrado no artigo.  
+
+Separei o programa ROC100.py para facilitar a depuração, pois não estava obtendo os valores esperados.    
+Segue a sequência de passos realizada:  
+Tenho o **nc_results.txt** obtido anteriormente, contendo os NC-scores para os pares de proteínas. Também tenho o arquivo **curated_set.dat**, obtido no site do Neighborhood Correlation, que consiste na classificação em famílias das 1577 proteínas do benchmark.  
 [comment]: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 05/08/2017
 
