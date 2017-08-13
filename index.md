@@ -1,4 +1,5 @@
 # Diário de bordo
+
 # 12/08/2017 e 13/08/2017
 
 Calculei o número de pares FF e FO com o seguinte script e de acordo com a fórmula que o autor do artigo me mandou por email:
@@ -33,8 +34,7 @@ Recapitulando, o arquivo nc_results_classified_sorted_cut.txt contém os pares d
 Agora eu suponho ter todos os dados necessários para gerar a curva ROC100k e o ROC100k score.  
 
 Criei o programa **roc_curve.py**, que gerou a seguinte curva ROC com o conjunto de All de famílias:
-<img src="https://github.com/igorfratel/MAC0215/tree/master/images/roc_all_generated.png" alt="hi" class="inline"/>
-
+![Alt text](images/roc_all_generated.png?raw=true "Title")
 
 
 
@@ -46,6 +46,7 @@ Criei o programa **roc_curve.py**, que gerou a seguinte curva ROC com o conjunto
 - [X] Baixar os arquivos necessarios (sequencias fasta e anotações)
 - [X] Fazer com que o ROC100.py gere um arquivo com as suas classificações de verdadeiros e falsos positivos
 - [X] Rodar o Blast nas 26.197 sequências
+
 
 [comment]: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 05/08/2017
