@@ -1,6 +1,23 @@
 # Diário de bordo
 
-# 17/08/2017
+# 21/08/2017
+Planejo começar o programa, lidando com as opções de input do usuário.   
+
+Defini como input para o programa (no arquivo main.py) as seguintes opções:
+* -p or --protein_clustering (Método de agrupamento de proteínas. O padrão é o neighborhood correlation)
+* -g or --genomic_clustering (Método de agrupamento de vizinhanças gênicas. Preciso pensar em um padrão)
+* -v or --visualization (Forma de visualizar os dados. Vizinhanças(1), grafos(2) e/ou conjuntos(3). O padrão é (1))
+* -d or --database_file (Arquivo texto usado como banco de dados. Não há padrão)
+
+Estudei a biblioteca argparse do python e consegui gerar as funcionalidades desejadas.  
+O programa se encontra no seguinte [repositório](https://github.com/igorfratel/genome-groups).
+
+- [ ] Implementar o agrupamento de proteínas padrão usando o NC
+- [ ] Encontrar uma medida de agrupamento de vizinhanças gênicas
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
+## 17/08/2017
 
 Em reunião, percebemos que eu não normalizei o eixo x das curvas ROC geradas. Esse é o motivo para que a área sob a curva tenha 
 dado um resultado tão diferente do apresentado no artigo.  
