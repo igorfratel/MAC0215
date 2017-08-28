@@ -1,5 +1,41 @@
 # Diário de bordo
 
+## 28/08/2017
+Li as respostas dadas pelo Robson e modifiquei os parâmetros do programa com base nelas
+### Respostas
+
+* Entrada:  
+  - arquivo1: contém linhas do tipo “regiao_1 locus_tag_1...locus_tag_n”
+  - arquivo2 contém “locus_tag fasta_sequence”
+  - nota: pode haver mais de uma região por genoma
+
+* Clusterização e homologia:   
+Toda sequência do mesmo grupo é homóloga das outras desse grupo mas pode não ser homóloga e sem dúvida é menos similar às proteínas de outros grupos.
+
+* Entrada para o agrupamento:  
+É razoável oferecer a opção de carga dos arquivo com os bitscores. Posso implementar assim agora mas vamos querer adicionar a capacidade de cálculo dos bitscores depois (não necessariamente usando BLAST).
+
+* Parâmetros para o agrupamento:  
+O usuário deve ter a opção de fornecer mas deve ser definido um valor padrão (default).
+Qual valor vamos ver depois... mas podemos começar com 0.005)
+
+* Opções de execução:  
+  - Opção 1: O usuário fornece as proteínas já clusterizadas em um arquivo (eg: arquivo de duas colunas “proteina cluster_id”)
+  - Opção 2: O usuário fornece pares de proteínas e medidas de similaridade calculadas entre eles com um método qualquer   externo ao meu programa. O trabalho seria clusterizar.
+  - Opção 3: O usuário fornece as proteínas e escolhe um método de detecção de homologia de proteínas(dentro dos disponíveis no meu programa?). O trabalho seria aplicar o método e depois clusterizar.
+
+* Âncoras:  
+Na entrada discutida em (1) essa informação (quem é o âncora) deverá ser fornecida, seja numa segunda coluna ou (mais provável) com uma marcação como um * ou [].
+
+
+- [X] Definir um padrão para o input do programa
+- [ ] Terminar a verificação da validade dos parâmetros passados pro programa
+- [ ] Incluir a lógica de ver se uma combinação de parâmetros é válida para execução
+- [ ] Implementar o agrupamento de proteínas padrão usando o NC
+- [ ] Encontrar uma medida de agrupamento de vizinhanças gênicas
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 22/08/2017
 Fiz algumas poucas alterações no [programa](https://github.com/igorfratel/genome_groups) e pensei sobre a modelagem do problema, implementação e input.  
 Pode ser útil: [PyCluster](http://bonsai.hgc.jp/~mdehoon/software/cluster/software.htm#pycluster)  
