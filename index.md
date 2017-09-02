@@ -1,5 +1,18 @@
 # Diário de bordo
 
+## 31/08/2017
+
+Terminei a lógica dos argumentos, isto é, as combinações válidas de argumentos para a execução do programa.
+O programa pode ser executado a partir de qualquer ponto: identificação de homologia, clustering de proteínas, clustering de vizinhanças gênicas.
+
+- [X] Definir um padrão para o input do programa
+- [X] Terminar a verificação da validade dos parâmetros passados pro programa
+- [X] Incluir a lógica de ver se uma combinação de parâmetros é válida para execução
+- [ ] Implementar o agrupamento de proteínas padrão usando o NC
+- [ ] Encontrar uma medida de agrupamento de vizinhanças gênicas
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 28/08/2017
 Li as respostas dadas pelo Robson e modifiquei os parâmetros do programa com base nelas
 ### Respostas
