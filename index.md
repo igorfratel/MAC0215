@@ -1,5 +1,15 @@
 # Diário de bordo
 
+## 04/09/2017
+
+Implementei a função protein_clustering de forma simples: Recebendo o input do NC, ela considera que dois pares de proteínas
+presentes no input formam uma aresta de um grafo. No final, escrevo todos os componentes conectados do grafo em um arquivo,
+pois eles serão os clusters de proteínas.   
+Utilizei a biblioteca Networks.  
+- [ ] Implementar uma medida simples de agrupamento de vizinhanças gênicas para ter uma versão protótipo do programa
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 31/08/2017
 
 Terminei a lógica dos argumentos, isto é, as combinações válidas de argumentos para a execução do programa.
