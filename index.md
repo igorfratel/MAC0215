@@ -1,5 +1,11 @@
 # Diário de bordo
 
+## 18/09/2017
+
+Substitui o os.system que estava rodando o NC_standalone pelo subprocess.run, que é o recomendado.
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 04/09/2017
 
 Implementei a função protein_clustering de forma simples: Recebendo o input do NC, ela considera que dois pares de proteínas
