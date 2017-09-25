@@ -9,8 +9,8 @@ método do maximal weighted matching visto no artigo do porthoDom, onde o peso d
 pelo dicionário mencionado acima. Ainda há melhorias a serem feitas.  
 **Nota**: preciso de um exemplo real de input para o programa.  
 
-[] Aprimorar o MWM
-[] Utilizar o MWM para clusterização de várias sequências
+- [ ] Aprimorar o MWM
+- [ ] Utilizar o MWM para clusterização de várias sequências
 
 [comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
 
