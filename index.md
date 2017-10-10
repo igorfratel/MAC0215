@@ -1,5 +1,14 @@
 # Diário de bordo
 
+## 07/10/2017
+
+Arrumei o MWM para duas vizinhanças gênicas.
+
+- [ ] Implementar a clusterização
+- [ ] Expandir para n vizinhanças gênicas
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 25/09/2017
 
 Modifiquei o protein_clustering para simplesmente criar um dicionário onde as chaves são pares
