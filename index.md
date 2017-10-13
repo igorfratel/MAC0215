@@ -1,5 +1,18 @@
 # Diário de bordo
 
+## 12/10/2017
+
+Escrevi o arquivo GenomicNeighborhood.cpp contendo a classe GenomicNeighborhood, correspondente
+a cada "bloco" do arquivo de entrada.
+
+- [ ] Implementar um Union-Find para agrupar as proteínas
+- [ ] Parsear os arquivos de entrada
+- [ ] Implementar um MWM para as vizinhanças
+- [ ] Talvez seja necessário implementar ou encontrar uma biblioteca de grafos (inclusive para o MWM)
+- [ ] Testar todo o processo com os arquivos de input
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 07/10/2017
 
 Arrumei o MWM para duas vizinhanças gênicas.
