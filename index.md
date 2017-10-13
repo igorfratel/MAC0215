@@ -1,5 +1,20 @@
 # Diário de bordo
 
+## 13/10/2017
+
+Decidi usar o algoritmo para encontrar os componentes conexos de um grafo para agrupar as proteínas ao invés do union find.
+O motivo é que dessa forma eu consigo filtrar os grupos por peso das arestas.  
+Implementei a classe UndirectedEdgeWeightedGraph que contém o método connected_components() contendo o algoritmo citado.
+
+O algoritmo que resolve o MWM em tempo n^3 é conhecido como algoritmo húngaro. Tive dificuldade para entendê-lo e não sei se
+vou conseguir implementá-lo, mas é um dos objetivos.
+
+- [ ] Parsear os arquivos de entrada
+- [ ] Implementar um MWM para as vizinhanças
+- [ ] Testar todo o processo com os arquivos de input
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 12/10/2017
 
 Escrevi o arquivo GenomicNeighborhood.cpp contendo a classe GenomicNeighborhood, correspondente
