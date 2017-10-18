@@ -1,5 +1,13 @@
 # Diário de bordo
 
+## 18/10/2017
+
+Implementei o protein_grouping.cpp e comecei o genome_grouping.cpp.
+
+- [ ] Parsear o arquivo das vizinhanças gênicas 
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 13/10/2017
 
 Decidi usar o algoritmo para encontrar os componentes conexos de um grafo para agrupar as proteínas ao invés do union find.
