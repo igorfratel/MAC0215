@@ -1,5 +1,33 @@
 # Diário de bordo
 
+## 29/10/2017
+
+O que eu fiz desde o último post:  
+Passei o projeto para c++, deixando apenas uma casca em python que lida com a lógica dos parâmetros.  
+O programa compila, mas ainda não foi testado.  
+Falta documentar, fazer algumas poucas melhorias e implementar o agrupamento das vizinhanças (por enquanto só imprimo a
+similaridade entre elas).  
+
+Utilizando o arquivo Locus.todas.Virb4.fa rodei o Blast para posteriormente rodar o NC.
+
+
+```bash
+grep ">" -o Locus.todas.Virb4.fa | wc -l
+```
+numero de sequencias: 498457  
+
+```bash
+awk '!/>/' Locus.todas.Virb4.fa | wc -m -
+```
+numero de caracteres ignorando as linhas com ">" (mas contando os newlines): 130393580  
+
+```bash
+makeblastdb -in Locus.todas.Virb4.fa -dbtype prot && cat Locus.todas.Virb4.fa | blastp -num_threads 8 -query - -db Locus.todas.Virb4.fa -evalue 4984570 -searchsp 
+17002485705216400 -gapopen 11 -gapextend 1 -outfmt "6 qaccver saccver bitscore qlen slen qstart qend sstart send evalue length nident" -max_target_seqs 498457 > 
+blast_projeto.tsv &&
+```
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 18/10/2017
 
 Implementei o protein_grouping.cpp e comecei o genome_grouping.cpp.
