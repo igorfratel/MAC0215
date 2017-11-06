@@ -1,6 +1,6 @@
 # Diário de bordo
 
-## 11/06/2017
+## 06/11/2017
 
 Arrumei os erros do programa e meu pequeno teste para dois genomas com duas proteínas cada deu certo.
 
