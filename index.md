@@ -1,5 +1,25 @@
 # Diário de bordo
 
+## 11/06/2017
+
+Arrumei os erros do programa e meu pequeno teste para dois genomas com duas proteínas cada deu certo.
+
+O objetivo é que o teste rode com o comando a seguir, porém o output não é capturado:  
+```bash
+python main.py -n teste.parsed.unique -s teste.sim -m 4 -t 0.3
+```  
+
+Então eu chamei o programa em C++ diretamente com o comando:
+```bash
+reset && make && ./projeto 1 teste.parsed.unique teste.sim 4 1 simple
+```
+Onde 4 é o número de proteínas e 0.3 é a estringência do agrupamento de proteínas
+Os arquivos teste.parsed.unique, teste.unique e teste.sim estão disponíveis do repositório do [projeto](https://github.com/igorfratel/genome_groups)
+
+Falta documentar, limpar melhor o código, fazer algumas otimizações e testar mais.
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 29/10/2017
 
 O que eu fiz desde o último post:  
