@@ -1,5 +1,14 @@
 # Diário de bordo
 
+## 24/11/2017
+
+Durante a semana me reuni com o Alan e fiz diversas mudanças no programa de acordo com o que discutimos nessas reuniões.  
+Pretendo marcar mais uma reunião para ver a última parte do programa.  
+Após isso, preciso fazer um teste grande (com o virb4, preferencialmente) e se tudo der certo acho que posso partir para a parte de visualização.
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
+
 ## 20/11/2017
 
 Implementei a classe de grafo como uma template para que possa ser usada com qualquer tipo de dados.  
