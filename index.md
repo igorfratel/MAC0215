@@ -1,5 +1,28 @@
 # Diário de bordo
 
+## 12/12/2017
+
+Rodei o teste com 50000 sequências, que demorou 9 horas e 26 minutos.  
+O comando foi o seguinte:  
+```bash
+./projeto 1 neighborhoods_parsed_menor.txt NC_output.txt 50000 0.5 simple projeto_genome_clustering_output.txt
+```
+O teste rodou sem problemas, embora seja imprático avaliar os resultados pra ver se os métodos foram aplicados corretamente.  
+Principalmente porque os "splits" que eu dei nos arquivos originais não garantem que certas proteínas que aparecem nos genomas
+também estejam aparecendo para o NC. Quando um par de proteínas não existe no arquivo do NC, estou atribuindo similaridade 0
+a ele.  
+
+Comecei a brincar com o Cytoscape para gerar os grafos de similaridade. Pretendo manter essa parte do projeto na minha
+[homepage](https://linux.ime.usp.br/~igorfratel/genomicneighborhoodvisualizer.html)
+
+A fim de verificar a corretude do programa, realizarei um teste menor cujos resultados eu possa conferir. 
+Além disso, eu acho que o programa está consumindo muita memória, por isso vou fazer uma versão que implementa
+os grafos usando listas de adjacência ao invés de matrizes.
+
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
+
 ## 30/11/2017
 
 Tentei rodar o NC no arquivo de blast gerado a partir do Locus.todas.virb4.fa, mas após 3 dias o processo foi cancelado por
