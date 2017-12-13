@@ -1,5 +1,27 @@
 # Diário de bordo
 
+## 13/12/2017
+
+Criei a pasta mini, onde vou fazer um teste verificável.  
+Peguei as 3 primeiras vizinhanças gênicas do arquivo Locus.todas.Virb4.unique, gerando o Locus.todas.Virb4.unique_mini.  
+Escrevi um programinha parse_blast.py para pegar o arquivo blast de todas as proteínas e manter somente aqueles pares onde 
+ambas as proteínas estejam em Locus.todas.Virb4.unique_mini.  
+
+Rodei o programa:
+```bash
+./projeto 0 ../../data/neighborhoods_mini.txt NC_output_mini.txt ../../data/blast_mini.txt nc 68 0 simple projeto_output_mini.txt
+```
+Pelo o que pude conferir, o programa funciona corretamente.  
+
+No entanto, eu percebi que muitos dos pares de proteínas do meu conjunto não aparecem no Blast. Por isso, vou rodar o Blast
+de novo pra garantir que todos os pares sejam computados.   
+Os arquivos usados nesse teste estão na pasta data no [repositório](https://github.com/igorfratel/genome_groups) do projeto e
+o teste pode ser rodado da mesma forma indicada acima.
+
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
+
 ## 12/12/2017
 
 Rodei o teste com 50000 sequências, que demorou 9 horas e 26 minutos.  
