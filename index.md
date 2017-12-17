@@ -6,10 +6,10 @@ Consegui fazer uma versão funcional da visualização gráfica do programa, ond
 e um gráfico de similaridade entre vizinhanças gênicas é gerado.  
 [link](https://linux.ime.usp.br/~igorfratel/genomicneighborhoodvisualizer.html)
 O arquivo testado foi:  
-genoma1 genoma2 93
-genoma3 genoma4 0
-genoma5 genoma6 75
-genoma7 genoma8 50
+genoma1 genoma2 93  
+genoma3 genoma4 0  
+genoma5 genoma6 75  
+genoma7 genoma8 50  
 
 [comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
 
