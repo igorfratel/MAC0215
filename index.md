@@ -1,5 +1,35 @@
 # Diário de bordo
 
+## 19/12/2017
+
+Agora o projeto suporta multiplas proteínas âncora.  
+O cds das proteínas está sendo guardado com um par de números.  
+O output está no formato:  
+    Rickettsia sibirica AABW01000001.1 803087..834945 Rickettsia sibirica AABW01000001.1 515046..541667 0
+    gênero     espécie  accession           cds  
+Agora temos parsing de argumentos da linha de comando, usando [cxxopts](https://github.com/jarro2783/cxxopts).
+
+Exemplos de execução do projeto:  
+
+```bash
+./neighborhood_comparator --help
+```
+
+```bash
+./neighborhood_comparator --execution_mode full \
+--neighborhoods_filename ../data/neighborhoods_mini.txt \
+--prot_sim_filename NC_output_mini.txt \
+--formatted_prot_filename ../data/blast_mini.txt \
+--protein_comparing nc \
+--num_prot 68 \
+--stringency 0 \
+--genome_comparing porthodom \
+--output neighborhood_comparator_output_mini.txt
+```
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
+
 ## 17/12/2017
 
 Consegui fazer uma versão funcional da visualização gráfica do programa, onde fazemos upload de um arquivo texto
