@@ -1,5 +1,14 @@
 # Diário de bordo
 
+## 04/01/2018
+
+Terminei a implementação da versão do programa com unionfind e hashtable.  
+Falta testar o funcionamento, implementar a versão com listas de adjacência nos grafos e considerar
+a integração da hashtable no grafo.  
+Aí pretendo fazer um grande teste com todas as versões a analisar o desempenho.
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 20/12/2017
 
 Implementei o UnionFind e um HashTable para proteínas.  
