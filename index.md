@@ -1,5 +1,16 @@
 # Diário de bordo
 
+## 08/01/2018
+
+Descobri na STL do C++ o unordered_map, que soluciona um problema do unionfind de repetição de proteínas e já implementa
+uma hashtable internamente. Incluí o unordered_map na implementação.  
+Fiz o teste mini no UnionFind e deu certo.  
+Mudei o map da versão de grafos para unordered_map também, pois permite acesso a elementos individuais em tempo praticamente constante.
+
+Próximo objetivo: implementar a versão de grafo com lista de adjacência e testar performance pra já excluir uma implementação.
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 04/01/2018
 
 Terminei a implementação da versão do programa com unionfind e hashtable.  
