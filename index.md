@@ -1,5 +1,11 @@
 # Diário de bordo
 
+## 10/01/2018
+
+Implementei a versão com listas de adjacência
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 08/01/2018
 
 Descobri na STL do C++ o unordered_map, que soluciona um problema do unionfind de repetição de proteínas e já implementa
