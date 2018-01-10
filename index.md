@@ -1,5 +1,28 @@
 # Diário de bordo
 
+## 10/01/2018
+
+Quero testar a performance em relação a tempo de execução e consumo de memória das implementações com listas de adjacência
+e matriz de adjacência, para poder excluir uma delas.  
+Tentei rodar o NC primeiro, para eliminar esse overhead.  
+
+``` bash
+NC_standalone -f blast_projeto_cut_spaced.txt -o NC_output.txt
+```
+
+O processo foi morto, provavelmente porque o NC consumiu muita memória com um arquivo Blast desse tamanho.  
+
+Resolvi diminuir o número de proteínas do conjunto de teste:
+```bash
+neighborhood_explorer -m 5 Locus.todas.Virb4.unique > Locus.todas.Virb4.unique_m5
+```
+
+Usei meu programa que filtra as linhas do blast cujas proteínas não estão presentes do arquivo de vizinhanças:
+```bash
+python parse_blast.py Locus.todas.Virb4.unique_m5 blast_projeto_cut_spaced.txt > blast_projeto_m5.txt
+```
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 09/01/2018
 
 Implementei a versão com listas de adjacência
