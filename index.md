@@ -1,6 +1,6 @@
 # Diário de bordo
 
-## 10/01/2018
+## 09/01/2018
 
 Implementei a versão com listas de adjacência
 
