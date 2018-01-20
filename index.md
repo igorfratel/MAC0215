@@ -1,5 +1,21 @@
 # Diário de bordo
 
+## 19/01/2018
+
+Construindo um dataset razoável pra testar:  
+
+Extraindo as queries:
+```bash
+neighborhood_explorer -of query Locus.todas.Virb4.unique_m2 > queries.Virb4
+```
+
+```bash
+blastdbcmd -target_only -db nr -entry_batch queries.Virb4 > queries.fa
+grep ">" queries.fa | cut -f 1 -d " " | cut -f 2 -d ">" | grep -v -F -w -f - queries.Virb4 > queries.missing
+epost -db protein -format acc -input queries.missing | efetch -format fasta >> queries.fa
+```
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 10/01/2018
 
 Quero testar a performance em relação a tempo de execução e consumo de memória das implementações com listas de adjacência
