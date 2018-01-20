@@ -2,6 +2,8 @@
 
 ## 19/01/2018
 
+Consegui instalar o g++ 7.2.0 (compilando na raça) e agora o projeto funciona na seal  
+
 Construindo um dataset razoável pra testar:  
 
 Extraindo as queries:
