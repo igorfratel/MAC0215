@@ -71,18 +71,68 @@ sys	0m0.448s
 
 100.000 proteínas:
 
+notebook:
+Processo morto por falta de memória (tenho 8GB de RAM)
+
 seal:
 real	1m19.835s
 user	0m35.860s
 sys	0m43.964s
 
-notebook:
-Processo morto por falta de memória (tenho 8GB de RAM)
 
 1.000.000 proteínas:
- Ainda não tenho o resultado
 
-Esse post será editado!!!
+seal: 
+Processo morto por falta de memória após 20min
+
+-------------------------------------------------
+
+*Union-Find:
+
+10.000 proteínas:
+
+notebok:
+real	0m0.018s
+user	0m0.018s
+sys	0m0.000s
+
+seal:
+real	0m0.023s
+user	0m0.024s
+sys	0m0.000s
+
+1841216 bytes
+
+
+100.000 proteínas:
+
+notebook:
+real	0m0.148s
+user	0m0.148s
+sys	0m0.000s
+
+seal:
+real	0m0.170s
+user	0m0.156s
+sys	0m0.012s
+
+17079056 bytes
+
+
+1.000.000 proteínas:
+
+notebook:
+real	0m1.898s
+user	0m1.851s
+sys	0m0.047s
+
+seal:
+real	0m2.924s
+user	0m2.752s
+sys	0m0.168s
+
+193855088 bytes
+
 
 Em seguida, pretendo rodar um teste onde, ao invés de adicionar várias proteínas e fazer uma única busca, eu adiciono as
 proteínas e realizo diversas buscas. Suspeito que a implementação de matrizes tenha vantagem em relação ao tempo de execução.
