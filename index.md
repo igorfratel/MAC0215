@@ -1,5 +1,13 @@
 # Diário de bordo
 
+## 15/02/2018
+
+Nos últimos dias eu discuti o projeto em reuniões, onde optamos pela implementação com listas de adjacência, realizei
+otimizações no programa, gerei planilhas e gráficos de performance e me livrei da necessidade de um script em python para
+parsear as vizinhanças.  
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 06/02/2018
 
 Tornei o projeto mais flexível. Agora cada nova medida de comparação de vizinhanças tem seu próprio arquivo com suas funções.
