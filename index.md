@@ -1,5 +1,11 @@
 # Diário de bordo
 
+## 17/02/2018
+
+Tentei paralelizar uma parte do programa usando openMP, mas a versão paralelizada ficou mais lenta que a serial
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+
 ## 15/02/2018
 
 Nos últimos dias eu discuti o projeto em reuniões, onde optamos pela implementação com listas de adjacência, realizei
