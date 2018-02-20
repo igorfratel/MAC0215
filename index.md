@@ -1,5 +1,19 @@
 # Diário de bordo
 
+## 20/02/2018
+
+Arrumei o formato do output pra ficar de acordo com o sugerido na apresentação.  
+Agora os scores têm precisão de 7 casas decimais.  
+Adicionei a opção de estringência para as vizinhanças, além de para as proteínas.  
+Adicionei  opção de pairings_filename, que especifica um arquivo para salvar as escolhas das arestas pela medida do porthodom.  
+O arquivo de pairings tem o formato  
+">accession1 coordenadas1 accession2 coordenadas2  
+ proteina1 proteina2 similaridade  
+ proteinaN proteinaM similaridade"
+                                      
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+                              
+
 ## 17/02/2018
 
 Tentei paralelizar uma parte do programa usando openMP, mas a versão paralelizada ficou mais lenta que a serial
