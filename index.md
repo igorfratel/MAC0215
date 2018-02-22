@@ -1,5 +1,15 @@
 # Diário de bordo
 
+## 22/02/2018
+
+Adicionei uma flag que indica que os scores entre as proteínas devem ser normalizados.  
+Adicionei a opção de mostrar as escolhas das arestas na medida porthodom O2 também.  
+Removi a opção de número de proteínas. Agora o programa lê isso diretamente das vizinhanças gênicas.  
+
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+       
+
 ## 21/02/2018
 
 Agora mostrar as arestas escolhidas pelo algoritmo é opcional.  
