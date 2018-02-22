@@ -1,5 +1,14 @@
 # Diário de bordo
 
+## 21/02/2018
+
+Agora mostrar as arestas escolhidas pelo algoritmo é opcional.  
+Adicionei a opção de printar no stdout.  
+Fiz uma refatoração geral da função de comparação de vizinhanças  
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+          
+	  
 ## 20/02/2018
 
 Arrumei o formato do output pra ficar de acordo com o sugerido na apresentação.  
