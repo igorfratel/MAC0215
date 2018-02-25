@@ -1,5 +1,18 @@
 # Diário de bordo
 
+## 25/02/2018
+
+Nos últimos dias tentei paralelizar o projeto, com a ajuda do Renato. Não conseguimos paralelizar de forma a ficar mais eficiente
+que a versão serial.
+
+Coloquei o projeto no github
+
+Das tarefas que eu recebi, faltou integrar o smith waterman / needleman wunsch
+
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+       
+       
 ## 22/02/2018
 
 Adicionei uma flag que indica que os scores entre as proteínas devem ser normalizados.  
