@@ -1,5 +1,17 @@
 # Diário de bordo
 
+## 04/03/2018
+
+Incorporei o algoritmo de alinhamento global (needleman-wunsch) no meu programa, tendo cumprido minhas pendências.  
+Melhorei meus comentários e identação.  
+Como vou começar a ter todas as minhas aulas a partir dessa semana, o projeto entrará em hiato.
+
+Link do projeto: https://github.com/igorfratel/genome_groups
+
+
+[comment]: <~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~>
+     
+
 ## 25/02/2018
 
 Nos últimos dias tentei paralelizar o projeto, com a ajuda do Renato. Não conseguimos paralelizar de forma a ficar mais eficiente
